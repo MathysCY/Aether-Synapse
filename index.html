@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LLM Neuronal Network | Neural Visualization</title>
+</head>
+
+<body>
+  <div id="ui-overlay">
+    <h1>LLM Neuronal Network</h1>
+    <p>Interactive 3D Neural Network Visualization</p>
+
+    <div id="info-panel-content">
+      <h2>System Architecture</h2>
+      <p>This visualization represents a dense neural network graph navigating a 3-dimensional space.</p>
+      <ul>
+        <li><strong>Nodes:</strong> Represent artificial neurons operating in a parallel high-performance buffer. The
+          volume is constrained to an <span class="highlight">800x800x800</span> spatial sector.</li>
+        <li><strong>Connections:</strong> Display pre-calculated synaptic linkages between neurons within a specific
+          distance threshold.</li>
+        <li><strong>AI Path:</strong> The glowing bright trail represents active data signals (AI processing) traversing
+          the network connections in real-time.</li>
+      </ul>
+    </div>
+
+    <div class="stats" id="info-panel">
+      <span>Nodes: <span id="node-count">0</span></span>
+      <span>Connections: <span id="conn-count">0</span></span>
+    </div>
+  </div>
+  <div id="canvas-container"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
